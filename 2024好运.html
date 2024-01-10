@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2024你会怎么有什么好运？</title>
+</head>
+<body>
+	<h1>2024你会怎么有什么好运？</h1>
+	<p>请输入你的名字：</p>
+	<input type="text" id="nameInput">
+	<button onclick="generateResult()">生成结果</button>
+	<p id="result"></p>
+	<script>
+		function generateResult() {
+			let name = document.getElementById("nameInput").value;
+			let results = ["你会在2024年发大财！", "你会在2024年桃花朵朵开！", "你会在2024年升职加薪"];
+			let randomIndex = Math.floor(Math.random() * results.length);
+			let result = results[randomIndex];
+			document.getElementById("result").innerHTML = "Hello, " + name + "! " + result;
+		}
+	</script>
+</body>
+</html>
+
+
